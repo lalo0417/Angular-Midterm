@@ -1,0 +1,12 @@
+<ion-view view-title="Category">
+	<ion-content class="padding">
+		<div>
+			<!--	<button ui-sref="categories" type="button" class="btn btn-default">Back</button>-->
+			<div class="col-xs-6 col-md-6">
+				<a class="col-xs-6 col-md-6" ng-repeat="book in showBooks" ui-sref="tab.product({categoryID: book.cat_id, productID: book._id})"><img src='{{book.image}}' width="150px" height="150px">
+					<p>{{book.title}}</p>
+				</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

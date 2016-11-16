@@ -1,0 +1,12 @@
+<ion-view view-title="Categories">
+	<ion-content class="padding">
+		<div>
+			<h2>Categories</h2>
+			<div ng-repeat="category in allData.categories">
+
+				<a class="col-xs-6 col-md-6" ui-sref="tab.category({categoryID: category._id})"><img src='{{category.image}}' width="150px" height="150px"></a>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>
